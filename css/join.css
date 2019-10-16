@@ -1,0 +1,164 @@
+*{
+  padding: 0;
+  margin: 0;
+  outline: none; 
+}
+
+main{
+  
+  background: url(../img/img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_logo{
+  animation-name: contact;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  position: relative;
+  width: 30vw;
+  height: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold-words{
+  font-size: 1.7vw;
+  font-weight: 700;
+}
+
+.main_logo h2{
+  font-size: 5vw;
+  font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+.main_logo p{
+  font-family: 'Abel', sans-serif;
+  font-size: 1.5vw;
+  text-align: center;
+
+}
+
+.main__content{
+  margin-top: 2vw;
+  display: flex;
+  width: 65vw;
+  
+  height: 35vw;
+  
+}
+
+.input{
+  width: 30vw;
+  height: 3vw;
+  border: none;
+  color: white;
+  background: rgba(0, 196, 196,0.5);
+  margin-top: 1vw;
+  border-left: rgba(0, 0, 0, 0) solid 0.2vw;
+}
+
+.input[type="text"]{
+  padding-left: 1vw;
+  font-size: 1vw;
+}
+
+.input[type="email"]{
+  font-size: 1vw;
+  padding-left: 1vw;
+}
+
+.input::placeholder{
+  color: white;
+  
+}
+
+.textarea::placeholder{
+
+  color: white;
+   
+  font-size: 1vw;
+}
+
+.textarea{
+  border-left: rgba(0, 0, 0, 0) solid 0.2vw;
+  font-size: 1.5vw;
+  padding-left: 1vw;
+  width: 30vw;
+  height: 15vw;
+  resize: none;
+  margin-top: 1vw;
+  background: rgba(0, 196, 196,0.5);
+  color: white;
+  border: none;
+  padding-top:1vw;
+}
+
+.aside_contact{
+  width: 35vw;
+  display: flex;
+  font-family: 'Abel', sans-serif;
+  flex-direction: column;
+  margin-left: 10vw;
+  font-size: 1.5vw;
+  
+  margin-top: 1vw;
+}
+
+footer{
+  background: rgb(38, 38, 38);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vw;
+}
+
+.footer__title{
+  font-size: 1.3vw;
+  font-family: 'Abel', sans-serif;
+  font-weight: 500;
+  color: lightgray;
+}
+
+.footer_logo{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5vw;
+  color: lightgray;
+  font-weight: 600;
+
+}
+
+.footer__title span{
+  color: rgb(226, 42, 81);
+}
+
+.input:hover,.textarea:hover{
+  cursor: pointer;
+  transition: 0.4s;
+  background: rgba(0, 196, 196,1);
+  border-left: rgba(0, 0, 0, 1) solid 0.2vw;
+}
+
+.input:invalid,.textarea:invalid{
+  border-left: rgba(255, 0, 0, 1) solid 0.2vw;
+  transition: 0.7s;
+}
+
+.input:valid,.textarea:valid{
+  border-left: rgb(53, 91, 130) solid 0.2vw;
+  transition: 0.7s;
+}
+
+@keyframes contact{
+  0%{top: -500px;}
+  50%{top: 30px;}
+  100%{top: 0;}
+
+}
